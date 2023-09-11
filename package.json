@@ -7,13 +7,31 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prettier": "prettier --config .prettierrc --write '{src, styles, .storybook}/**/*.{js,jsx,ts,tsx}'",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
+    "@storybook/addon-actions": "^7.4.0",
+    "@storybook/addon-backgrounds": "^7.4.0",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-interactions": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addon-measure": "^7.4.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/addon-storysource": "^7.4.0",
+    "@storybook/addon-toolbars": "^7.4.0",
+    "@storybook/blocks": "^7.4.0",
+    "@storybook/builder-vite": "^7.4.0",
+    "@storybook/react": "^7.4.0",
+    "@storybook/react-vite": "^7.4.0",
+    "@storybook/testing-library": "^0.2.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -22,6 +40,10 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-storybook": "^0.6.13",
+    "prettier": "^3.0.3",
+    "storybook": "^7.4.0",
+    "styled-components": "^6.0.7",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
