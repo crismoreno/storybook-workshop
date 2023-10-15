@@ -11,5 +11,6 @@
     "node_modules",
     "__stories__",
     "<rootDir>/src/index.ts"
-  ]
+  ],
+  "setupFilesAfterEnv": ["<rootDir>/setupTests.ts"]
 }

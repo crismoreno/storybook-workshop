@@ -26,8 +26,7 @@ const Card = ({
   makeHoverEffect,
 }: CardProps): JSX.Element => {
   const isTitleString = typeof title === 'string';
-  const shouldTitleBeTruncated =
-    subtitle && isTitleString && title.length >= 30;
+  const mustTitleBeTruncated = subtitle && isTitleString && title.length >= 30;
 
   return (
     <StyledCard
@@ -41,8 +40,8 @@ const Card = ({
           <img className="project-image" src={image} />
         </div>
         <div className="project-details flex flex-col justify-center p-3">
-          <span className="title">
-            {shouldTitleBeTruncated ? title.substr(0, 30) + '\u2026' : title}
+          <span className="title" aria-label="title">
+            {mustTitleBeTruncated ? title.substring(0, 30) + '\u2026' : title}
           </span>
           <p className="subtitle">{subtitle}</p>
         </div>

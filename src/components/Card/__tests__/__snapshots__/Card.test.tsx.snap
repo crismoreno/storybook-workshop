@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bdnyFh eXOPrQ"
+  >
+    <div
+      class="card-content flex flex-col"
+    >
+      <div
+        class="img-container"
+      >
+        <img
+          class="project-image"
+          src="https://i.blogs.es/96c029/windows-xp-sin-soporte/1366_2000.jpg"
+        />
+      </div>
+      <div
+        class="project-details flex flex-col justify-center p-3"
+      >
+        <span
+          aria-label="title"
+          class="title"
+        >
+          Test title
+        </span>
+        <p
+          class="subtitle"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Should match snapshot: Default 1`] = `
+exports[`Button Should match snapshot 1`] = `
 <div>
   <button
-    class="sc-bdnyFh eMRyXb"
+    class="sc-bdnyFh bLFTMv"
   >
     Test Button
   </button>

@@ -1,5 +1,10 @@
 import Card from '../Card';
 import { action } from '@storybook/addon-actions';
+import defaultCardImg from '../../../images/Card/default.png';
+import blogPostImg from '../../../images/Card/blog-post-img.png';
+import projectImg from '../../../images/Card/project-img.png';
+import smallImg from '../../../images/Card/small-img.png';
+import xpImg from '../../../images/Card/xp-img.jpg';
 
 export default {
   title: 'Components/Atom/Card',
@@ -8,14 +13,14 @@ export default {
 
 export const DefaultCardStory = (): JSX.Element => (
   <Card
-    image="https://res.cloudinary.com/hyavxktsb/image/upload/v1/projects/41/cover.png"
+    image={defaultCardImg}
     title={<p className="uppercase">Default Card</p>}
   />
 );
 
 export const ProjectCardStory = (): JSX.Element => (
   <Card
-    image="https://res.cloudinary.com/hyavxktsb/image/upload/v1/projects/26/cover.png"
+    image={projectImg}
     title={<p className="uppercase">PartyApp</p>}
     subtitle={'Personal Project'}
     onClick={action('Primary action button')}
@@ -25,7 +30,7 @@ export const ProjectCardStory = (): JSX.Element => (
 
 export const BlogCardStory = (): JSX.Element => (
   <Card
-    image="https://cdn-images-1.medium.com/max/700/1*CpReGVMUH5YdA2O61hUO3w.png"
+    image={blogPostImg}
     title="Landing a job as a Junior Front-End developer"
     subtitle={'21/11/2020 - 3 years ago'}
     onClick={action('Primary action button')}
@@ -35,7 +40,7 @@ export const BlogCardStory = (): JSX.Element => (
 
 export const XPCardStory = (): JSX.Element => (
   <Card
-    image="https://i.blogs.es/96c029/windows-xp-sin-soporte/1366_2000.jpg"
+    image={xpImg}
     title={
       <>
         <strong>OCT 2019 - JUN 2020</strong> · MA IN FULL-STACK WEB DEVELOPMENT
@@ -48,7 +53,7 @@ export const XPCardStory = (): JSX.Element => (
 
 export const XPCardSmallStory = (): JSX.Element => (
   <Card
-    image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pokémon_logo.svg/1200px-International_Pokémon_logo.svg.png"
+    image={smallImg}
     title={
       <>
         <strong>OCT 2019 - JUN 2020</strong> · MA IN FULL-STACK WEB DEVELOPMENT

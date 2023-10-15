@@ -1,20 +1,20 @@
 {
   "compilerOptions": {
-		"allowJs": true,
-		"baseUrl": "./",
-		"declaration": true,
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": false,
-		"forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
 
     "target": "ESNext",
     "useDefineForClassFields": true,
-		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
 
     /* Bundler mode */
-		"moduleResolution": "Node",
+    "moduleResolution": "Node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -23,10 +23,11 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-	"include": ["src", ".storybook"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", ".storybook"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "types": ["node", "jest", "@testing-library/jest-dom"]
 }

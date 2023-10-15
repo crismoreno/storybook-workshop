@@ -10,7 +10,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prettier": "prettier --config .prettierrc --write '{src, styles, .storybook}/**/*.{js,jsx,ts,tsx}'",
-    "test": "jest --config ./jest.config.json --env=jsdom"
+    "test": "jest --config ./jest.config.json --env=jsdom",
+    "update-snaps": "jest --config ./jest.config.json --env=jsdom --updateSnapshot"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
