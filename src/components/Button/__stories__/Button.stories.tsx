@@ -26,3 +26,11 @@ export const SecondaryButton = (): JSX.Element => (
 export const ButtonWithOnClickEvent = (): JSX.Element => (
   <Button onClick={action('Primary action button')}>Button with click</Button>
 );
+
+export const DisabledButton = (): JSX.Element => (
+  <Button disabled>Disabled button</Button>
+);
+
+export const UppercasedButton = (): JSX.Element => (
+  <Button isUppercase>Uppercased button</Button>
+);

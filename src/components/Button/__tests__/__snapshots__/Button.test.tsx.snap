@@ -2,10 +2,10 @@
 
 exports[`Button Should match snapshot: Default 1`] = `
 <div>
-  <a
-    class="sc-bdnyFh cybjqN"
+  <button
+    class="sc-bdnyFh eMRyXb"
   >
     Test Button
-  </a>
+  </button>
 </div>
 `;
